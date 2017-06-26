@@ -1,0 +1,50 @@
+/*=== GENERAL ===*/
+
+* {
+	box-sizing: border-box;
+	border: 1px solid black;
+	padding: 0;
+	margin: 0;
+}
+
+a:active,
+a:hover,
+a:visited {
+	color: #000;
+}
+
+li:hover {
+	background-color: rgba(0,0,0,0.3);
+}
+
+/*.clear::before.
+.clear::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+*/
+
+/*=== 1ST LEVEL MENU ===*/	
+
+ul {
+	/*float: right;*/
+	font-size: 0;
+}
+
+nav li {
+	list-style-type: none;
+	text-transform: uppercase;
+	width: 150px;
+	text-align: center;
+	font-family: 'Muli', sans-serif;
+	display: inline-block;
+	font-size: 18px;
+	line-height: 50px;
+	height: 50px;
+}
+
+a {
+	text-decoration: none;
+}
+
