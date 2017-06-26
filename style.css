@@ -2,7 +2,6 @@
 
 * {
 	box-sizing: border-box;
-	border: 1px solid black;
 	padding: 0;
 	margin: 0;
 }
@@ -17,18 +16,18 @@ li:hover {
 	background-color: rgba(0,0,0,0.3);
 }
 
-/*.clear::before.
+.clear::before,
 .clear::after {
 	content: "";
 	display: table;
 	clear: both;
 }
-*/
+
+
 
 /*=== 1ST LEVEL MENU ===*/	
-
 ul {
-	/*float: right;*/
+	float: right;
 	font-size: 0;
 }
 
@@ -48,3 +47,21 @@ a {
 	text-decoration: none;
 }
 
+/*=== 2ND LEVEL MENU ===*/	
+ ul ul li {
+ 	display: block;
+ 	position: relative;
+ }
+
+ ul ul {
+ 	display: none;
+ 	position: absolute;
+ }
+
+li li {
+	position: absolute;
+}
+
+nav li:hover ul {
+	display: block;
+}
