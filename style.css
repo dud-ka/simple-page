@@ -8,7 +8,8 @@
 
 a:active,
 a:hover,
-a:visited {
+a:visited,
+a:link {
 	color: #000;
 }
 
